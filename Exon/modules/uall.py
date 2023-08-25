@@ -212,7 +212,7 @@ async def get_users(show):
     os.remove("userslist.txt")
 
 
-__mod_name__ = "𝐔ᴀʟʟ"
+__mod_name__ = "UserList"
 
 # ғᴏʀ ʜᴇʟᴘ ᴍᴇɴᴜ
 
