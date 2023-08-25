@@ -43,16 +43,16 @@ PM_START_TEX = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="❣ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ❣︎", url=f"t.me/{BOT_USERNAME}?startgroup=new"
+            text="❣ Add Me To Your Chat ❣︎", url=f"t.me/{BOT_USERNAME}?startgroup=new"
         ),
     ],
     [
-        InlineKeyboardButton(text=f"🚁 ʜᴇʟᴘ 🚁", callback_data="help_back"),
-        InlineKeyboardButton(text=f"🥀 sᴛᴀᴛs 🥀", callback_data="stats_callback"),
+        InlineKeyboardButton(text=f"HELP", callback_data="help_back"),
+        InlineKeyboardButton(text=f"STATS", callback_data="stats_callback"),
     ],
     [
-        InlineKeyboardButton(text="🏡 ᴀʙᴏᴜᴛ 🏡", callback_data="ABG_"),
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="ABOUT", callback_data="ABG_"),
+        InlineKeyboardButton(text="OWNER", url=f"tg://user?id={OWNER_ID}"),
     ],
 ]
 
@@ -410,7 +410,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="• ʜᴇʟᴘ •​",
+                                text="• Help •​",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -421,7 +421,7 @@ def get_help(update: Update, context: CallbackContext):
             )
             return
         update.effective_message.reply_text(
-            "» ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʜᴇʟᴩ.",
+            "» Choose An Option To Get Help.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -434,7 +434,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="• ᴏᴩᴇɴ ʜᴇʀᴇ •",
+                            text="• Open Here •",
                             callback_data="help_back",
                         )
                     ],
@@ -462,7 +462,7 @@ def get_help(update: Update, context: CallbackContext):
             )
             help_buttons.append(
                 [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back"),
+                    InlineKeyboardButton(text="Back", callback_data="help_back"),
                     InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="ABG_support"),
                 ]
             )
